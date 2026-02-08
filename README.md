@@ -109,6 +109,7 @@ http://localhost:3000
 ---
 
 🧠 Assumptions Made
+
 No backend or database is required
 
 Data persistence is handled via LocalStorage
