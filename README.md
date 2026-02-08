@@ -93,22 +93,22 @@ employee-management-system/
 ---
 
 ## ⚙️ Setup Instructions
-
-### 1️⃣ Clone the repository
+```
+1️⃣ Clone the repository
+bash
 git clone <your-repo-url>
 cd employee-management-system
-
-###2️⃣ Install dependencies
+2️⃣ Install dependencies
 npm install
-
-###3️⃣ Run the development server
+3️⃣ Run the development server
 npm run dev
-
-###4️⃣ Open in browser
+4️⃣ Open in browser
 http://localhost:3000
+```
 
-##🧠 Assumptions Made
+---
 
+🧠 Assumptions Made
 No backend or database is required
 
 Data persistence is handled via LocalStorage
@@ -116,3 +116,4 @@ Data persistence is handled via LocalStorage
 Authentication is not included
 
 Email format validation is handled at input level
+
