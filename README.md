@@ -107,7 +107,7 @@ npm run dev
 ###4️⃣ Open in browser
 http://localhost:3000
 
-🧠 Assumptions Made
+##🧠 Assumptions Made
 
 No backend or database is required
 
