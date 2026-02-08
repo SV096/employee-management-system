@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Employee Management System
 
-## Getting Started
+A modern **Employee Management System** built using **Next.js (App Router)** and **TypeScript**, designed to perform full **CRUD operations** with support for **dynamic/custom employee fields**.  
+The UI is clean, responsive, and resume-ready.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tech Stack
+
+- **Next.js 14+ (App Router)**
+- **React (Client Components)**
+- **TypeScript**
+- **Tailwind CSS**
+- **Context API** (global state management)
+- **LocalStorage** (data persistence)
+- **Lucide Icons**
+
+---
+
+## 📂 Project Structure
+```
+employee-management-system/
+│
+├── src/
+│   ├── app/
+│   │   ├── page.tsx
+│   │   ├── layout.tsx
+│   │   ├── globals.css
+│   │   ├── favicon.ico
+│   │   └── employees/
+│   │       ├── page.tsx
+│   │       ├── new/page.tsx
+│   │       └── [id]/edit/page.tsx
+│   │
+│   ├── components/
+│   │   ├── Header.tsx
+│   │   ├── EmployeeForm.tsx
+│   │   └── DynamicFields.tsx
+│   │
+│   ├── context/
+│   │   └── EmployeeContext.tsx
+│   │
+│   └── types/
+│       └── employee.ts
+│
+├── .gitignore
+├── README.md
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── next.config.ts
+├── postcss.config.mjs
+├── eslint.config.mjs
+└── next-env.d.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🏠 Home Page
+- Professional hero section
+- Quick actions:
+  - **View Employees**
+  - **Add Employee**
+- Feature highlights with icons
 
-## Learn More
+### 👥 Employee Management
+- View all employees in a clean card layout
+- Edit and delete employee records
+- Smooth scrolling and highlight on search
 
-To learn more about Next.js, take a look at the following resources:
+### ➕ Add / Edit Employee
+- Required fields:
+  - Name
+  - Email
+  - Role
+- Dynamic custom fields:
+  - Add unlimited custom attributes (e.g. Phone, Team, Floor, Skills)
+  - Supports comma-separated values
+  - Fields auto-commit on Save / Update
+- Works for both **Add** and **Edit** flows
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🔍 Search
+- Search employee by name
+- Auto-scrolls to the matching card
+- Temporary “not found” message with auto-dismiss
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 💾 Data Persistence
+- All employee data stored in **LocalStorage**
+- Data remains after page refresh
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⚙️ Setup Instructions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 1️⃣ Clone the repository
+git clone <your-repo-url>
+cd employee-management-system
+
+###2️⃣ Install dependencies
+npm install
+
+###3️⃣ Run the development server
+npm run dev
+
+###4️⃣ Open in browser
+http://localhost:3000
+
+🧠 Assumptions Made
+
+No backend or database is required
+
+Data persistence is handled via LocalStorage
+
+Authentication is not included
+
+Email format validation is handled at input level
