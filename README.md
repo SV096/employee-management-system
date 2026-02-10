@@ -96,7 +96,6 @@ employee-management-system/
 ```
 1️⃣ Clone the repository
 bash
-git clone <your-repo-url>
 cd employee-management-system
 2️⃣ Install dependencies
 npm install
